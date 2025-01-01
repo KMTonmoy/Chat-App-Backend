@@ -16,6 +16,7 @@ export const getUsersForSidebar = async (req, res) => {
   }
 };
 
+
 export const getMessages = async (req, res) => {
   try {
     const { id: userToChatId } = req.params;
@@ -34,6 +35,7 @@ export const getMessages = async (req, res) => {
     res.status(500).json({ error: "Internal server error" });
   }
 };
+
 
 export const sendMessage = async (req, res) => {
   try {
@@ -68,3 +70,6 @@ export const sendMessage = async (req, res) => {
     res.status(500).json({ error: "Internal server error" });
   }
 };
+
+ 
+
